@@ -1,7 +1,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 // require('dotenv').config();
 module.exports = {
-// PRIVATE_KEY="grit bronze stadium vanish universe soon swallow dinner modify aspect glad nasty";
+// PRIVATE_KEY="SEED PHRASE";
   networks: {
     xinfin: {
       provider: () => new HDWalletProvider(
@@ -13,7 +13,7 @@ module.exports = {
     },
     apothem: {
       provider: () => new HDWalletProvider(
-        "grit bronze stadium vanish universe soon swallow dinner modify aspect glad nasty",
+        PRIVATE_KEY,
         'https://erpc.apothem.network/'),
       network_id: 51,
       gasLimit: 21000,
